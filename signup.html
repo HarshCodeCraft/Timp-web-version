@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/Ecommerce/signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Font awesome!-->
+    <script src="https://kit.fontawesome.com/f4e855eb8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- main container  -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+        <!-- login container  -->
+        <div class="row border rounded-5 p-3 bg-white shadow box-area">
+
+            <!-- left box  -->
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box "
+                style="background: #103cbe">
+                <div class="feature-image mb-3">
+                    <img class="rounded-4" src="/Ecommerce/img/a-meticulously-rendered.jpeg" class="img-fluid"
+                        style="width: 250px;">
+                </div>
+                <p class="text-white fs-2 " style="font-family: sans-serif; font-weight: 600;">Be
+                    Verified</p>
+                <small class="text-white text-wrap text-center"
+                    style="width: 20rem; font-family: 'Courier New', Courier, monospace;">Don't be slow! Our prices are
+                    low.</small>
+
+            </div>
+
+            <!-- right box  -->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <h2>Dear,User</h2>
+                        <p>We are happy to have you back..</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" id="name" class="form-control form-control-lg bg-light fs-6"
+                            placeholder="ENTER YOUR NAME">
+                    </div>
+                    <span class="-mt-10 mb-0">PLEASE ENTER YOUR NAME</span>
+
+                    <div class="input-group mb-3">
+                        <input type="email" id="email" class="form-control form-control-lg bg-light fs-6"
+                            placeholder="ENTER YOUR EMAIL ADDRESS">
+                    </div>
+                    <span class="-mt-10 mb-0">PLEASE ENTER YOUR EMAIL ADDRESS</span>
+
+                    <div class="input-group mb-3">
+                        <input type="password" id="password" class="form-control form-control-lg bg-light fs-6"
+                            placeholder="ENTER YOUR PASSWORD">
+                    </div>
+                    <span>PLEASE ENTER YOUR PASSWORD</span>
+
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="formcheck">
+                            <label for="formcheck" class="forem-check-labrl text-secondary"><small>Remember
+                                    Me</small></label>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button onclick="signup()" class="btn btn-lg btn-primary w-100 fs-6 ">Sign Up</button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6 "><img
+                                src="data:image/jpeg;base64,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"
+                                style="width:20px; mix-blend-mode: darken;" class="me-2" alt="">Sign In with
+                            Google</button>
+                    </div>
+                    <div class="row ">
+                        <small class="text-center">I have account? <a href="/Ecommerce/Login.html">Login</a></small>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var id = 0;
+        var array_Data = [];
+        function signup() {
+            var fname = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var name = document.getElementsByTagName('span');
+            if (!name && !email && !password) {
+                name[0].style.display = "block";
+                name[1].style.display = "block";
+                name[2].style.display = "block";
+            } else {
+                if (fname) {
+                    name[0].style.display = "none";
+                    if (email) {
+                        name[1].style.display = "none";
+                        if (password) {
+                            name[2].style.display = "none";
+                            name[3].style.display = "block";
+                            var max = + 1;
+                            id += max;
+                            //console.log(id)
+                            var data = "";
+                            var user_data = {
+                                id,
+                                name: fname,
+                                email,
+                                password
+                            };
+                            array_Data.push(user_data)
+                            array_Data.forEach(element => {
+                                data += `
+                            <div>Name is :${element.name}</div>
+                            <div>Name is :${element.email}</div>
+                            <div>Password is :${element.password}</div>
+                            `;
+                                var newData = JSON.stringify(array_Data);
+                                localStorage.setItem("UsersignIn", newData);
+                                // document.getElementsByClassName('from')[0].classList.remove('block')
+                                window.location = '/Ecommerce/Login.html';
+                            });
+                        } else {
+                            name[2].style.display = "block";
+                        }
+                    } else {
+                        name[1].style.display = "block";
+                    }
+                } else {
+                    name[0].style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

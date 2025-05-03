@@ -1,0 +1,41 @@
+body{
+  font-family: sans-serif;
+  background: #ececec;
+}
+
+/* login container  */
+.box-area{
+  width: 930px;
+}
+.right-box{
+  padding: 40px 30px 40px 40px;
+}
+::placeholder{
+  font-size: 16px;
+}
+@media only screen and (max-width:768px){
+  .box-area{
+    margin: 0 10px;
+
+  }
+  .left-box{
+    height: 100px;
+    overflow: hidden;
+  }
+  .right-box{
+    padding: 20px;
+  }
+}
+.block{
+  display: block !important;
+}
+.none{
+  display: none;
+}
+ span {
+  display: none;
+  color: black;
+  /* font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px; */
+}

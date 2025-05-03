@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Order </title>
+    <link rel="stylesheet" type="text/css" href="Confirmorder.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4e855eb8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container pt-3">
+        <div class="input-group">
+            <a class="navbar-brand" href="#"> <img alt="logo" class="me-3 me-md-5" src="img/logo.svg"></a>
+            <!--LOGO!-->
+            <input type="text" id="input-form" class="form-control" placeholder="Search"
+                aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">All type</button>
+            <button title="Search" class="btn btn-primary d-none d-lg-block"><i
+                    class="fa-solid fa-magnifying-glass rounded d-none d-lg-block"></i></button>
+        </div>
+    </div>
+    <!--Container div end -->
+    <hr>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <h3 class="fw-bold mb-sm-3 mb-md-5 text-center text-md-start">Order Summary</h3>
+                <button onclick="removeData()" class="border-0 bg-white lead fw-normal mt-0 mb-0">All <i
+                        class="btn btn-primary fa-solid fa-trash p-4 py-2"></i></button>
+            </div>
+            <div class="" id="order-grid">
+
+            </div>
+        </div>
+        <!--row and container end-->
+    </div>
+
+    <!--  why choose start -->
+    <div class="py-5 px-3">
+        <div class="container py-5">
+            <h3 class="fw-bold  text-center text-md-start mb-3">Why choose Us?</h3>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-money-bill fs-1 text-primary"></i>
+                    </div>
+
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">Reasonable prices</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-star  fs-1 text-primary"></i>
+                    </div>
+
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">
+                            Best quality</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+
+                <div class=" col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-plane  fs-1 text-primary"></i>
+                    </div>
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">Worldwide shipping</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-users  fs-1 text-primary"></i>
+                    </div>
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">Customer satisfaction</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-thumbs-up  fs-1 text-primary"></i>
+                    </div>
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">Happy customers</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center">
+
+                    <div class="bg-white shadow-sm rounded-circle p-3">
+                        <i class="fa-solid fa-box-open fs-1 text-primary"></i>
+                    </div>
+                    <div class="ms-3 mt-md-5">
+                        <h6 class="h6 fw-bold">Thousand items</h6>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+                            eiusmor</p>
+                    </div>
+                </div>
+
+
+            </div><!--row idv--->
+
+        </div>
+    </div>
+    <!-- why choose end  -->
+
+    <!-- Footer start -->
+
+    <div class="py-5">
+        <div class="container">
+
+            <div class="row d-flex">
+
+                <div class="col-md-12 col-lg-3 mb-3">
+
+                    <img alt="logo" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/logo.svg">
+                    <p class="mt-4 text-muted">© 2018- 2021 Templatemount.<br>
+                        All rights reserved.</p>
+
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+
+                    <h6 class="h6 fw-bold">Store</h6>
+
+                    <a href="#" class="text-decoration-none text-muted">About us</a>
+                    <a href="#" class="text-decoration-none text-muted">Find stories</a>
+                    <a href="#" class="text-decoration-none text-muted">Categories</a>
+                    <a href="#" class="text-decoration-none text-muted">Blogs</a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                    <h6 class="h6 fw-bold">Information</h6>
+                    <a href="#" class="text-decoration-none text-muted">About us</a>
+                    <a href="#" class="text-decoration-none text-muted">Find stories</a>
+                    <a href="#" class="text-decoration-none text-muted">Categories</a>
+                    <a href="#" class="text-decoration-none text-muted">Blogs</a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mt-3 mt-md-0">
+                    <h6 class="h6 fw-bold">Support</h6>
+                    <a href="#" class="text-decoration-none text-muted">About us</a>
+                    <a href="#" class="text-decoration-none text-muted">Find stories</a>
+                    <a href="#" class="text-decoration-none text-muted">Categories</a>
+                    <a href="#" class="text-decoration-none text-muted">Blogs</a>
+                </div>
+
+                <div class="col-lg-3 mt-3 mt-lg-0">
+
+                    <h6 class="h6 fw-bold">Newsletter</h6>
+                    <p class="text-muted">Stay in touch with latest updates about our products and offers</p>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">Join</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--footer ended-->
+            <script>
+                const cartItem = JSON.parse(localStorage.getItem('cartItem') || '[]');
+                let ApiData = '';
+                cartItem.forEach((product, i) => {
+                    ApiData += `
+    <div class="w-100 mt-3 mb-3+ heigth-custom rounded-3 py-2 px-2 card ">
+        <div class=" ">
+            <div class="w-100 d-flex p-2 " id="card-width">
+                <div class="container ">
+                    <div class="row">
+                        <!-- right box  -->
+                        <div class="right-box ">
+                            <div class="row align-items-center">
+                                <div class="header-text mb-4">
+                                    <h2>Your,Details</h2>
+                                    <p>Everything you need on a Budget..</p>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <i class="fa-solid fa-user bg-primary text-white p-3 "></i>
+                                    <input type="text" id="name" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="NAME">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <i class="fa-solid fa-phone bg-primary text-white p-3 "></i>
+                                    <input type="number" id="number" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="NUMBER">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <i class="fa-solid fa-hashtag bg-primary text-white p-3 "></i>
+                                    <input type="number" id="pincode" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="PIN CODE">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <i class="fa-solid fa-city bg-primary text-white p-3 "></i>
+                                    <input type="text" id="state" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="STATE">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <i class="fa-solid fa-location-dot bg-primary text-white p-3 "></i>
+                                    <input type="text" id="city" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="CITY">
+                                </div>
+                                <div class="input-group ">
+                                    <!-- <i class="fa-solid fa-house bg-primary text-white p-3 "></i> -->
+                                    <div class="">
+                                    <label class="text-uppercase fs-6 fw-normal">New Address</label>
+                                    <input class="" onclick="Newaddress()" type="radio" id="address" value="newaddress" name="add" >
+                                    <label class="text-uppercase fs-6 fw-normal">Old Address</label>
+                                    <input class="" type="radio" id="address" value="oldaddress" name="add">
+                                    </div>
+                                </div>
+                                <div class="input-group newAddress   mt-3">
+                                 
+                                    <input type="text" id="address" class="form-control form-control-lg bg-light fs-6"
+                                        placeholder="New address">
+                                </div>
+                            </div>
+                        </div>
+                   
+                    </div>
+
+                </div>
+
+                <div class="text-center w-100 card-img">
+                    <img class="p-0 h-75 w-75 " src="${product.img}">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title ">$${product.price}</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">${product.title}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">${product.des}</h6>
+                </div>
+
+            </div>
+                    <div class="">
+                        <button onclick="save('${product.id}','${product.img}','${product.price}','${product.title}','${product.des}')" class="btn btn-lg btn-primary w-100 fs-6 ">Order Done</button>
+                    </div>
+
+        </div>
+
+
+    </div>
+    `;
+                });
+
+                // Inject the generated HTML into the DOM
+                document.getElementById('order-grid').innerHTML = ApiData;
+
+                function save(id, img, price, title, des) {
+                    var Uname = document.getElementById('name').value;
+                    var Unumber = document.getElementById('number').value;
+                    var Uaddress = document.getElementById('address').value;
+                    var Upincode = document.getElementById('pincode').value;
+                    var Ustate = document.getElementById('state').value;
+                    var Ucity = document.getElementById('city').value;
+
+                    var user_loginData = JSON.parse(localStorage.getItem("login"));
+
+                    var orderdetails =
+                    {
+                        "id": user_loginData.id,
+                        "email": user_loginData.email,
+                        "img": img,
+                        "price": price,
+                        "title": title,
+                        "des": des,
+                        "name": Uname,
+                        "number": Unumber,
+                        "address": Uaddress,
+                        "pincode": Upincode,
+                        "state": Ustate,
+                        "city": Ucity
+                    }
+                    localStorage.setItem('adminorder', JSON.stringify(orderdetails));
+                    //console.log(user_loginData.id);
+                    alert('order placed');
+                    window.location.href = 'index.html';
+                };
+
+                const removeData = () => {
+                    let cartData = JSON.parse(localStorage.getItem('cartItem') || '[]');
+                    localStorage.removeItem('cartItem');
+                    window.location.reload();
+                }
+            </script>
+
+</body>
+
+</html>
